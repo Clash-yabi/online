@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
+      rel="stylesheet"
+    />
+    <title>Brief voor mijn lieve meisje ❤️</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Forum", sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .letter-container {
+        background: #fff;
+        max-width: 600px;
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        position: relative;
+        animation: fadeInUp 1s ease-out;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .heart {
+        color: #e74c3c;
+        font-size: 2.5rem;
+        animation: heartbeat 2s infinite;
+      }
+
+      @keyframes heartbeat {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .title {
+        color: #2c3e50;
+        font-size: 2rem;
+        margin: 10px 0;
+        font-weight: bold;
+      }
+
+      .content {
+        line-height: 1.8;
+        color: #34495e;
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+      }
+
+      .signature {
+        text-align: right;
+        color: #e74c3c;
+        font-style: italic;
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+
+      .button-container {
+        text-align: center;
+      }
+
+      .love-button {
+        background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(238, 90, 36, 0.4);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .love-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(238, 90, 36, 0.6);
+      }
+
+      .love-button:active {
+        transform: translateY(-1px);
+      }
+
+      .love-button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.4),
+          transparent
+        );
+        transition: left 0.5s;
+      }
+
+      .love-button:hover::before {
+        left: 100%;
+      }
+
+      .decorative-border {
+        border: 3px solid transparent;
+        border-image: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #f9ca24)
+          1;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 10px;
+      }
+
+      .floating-hearts {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+      }
+
+      .floating-heart {
+        position: absolute;
+        color: #e74c3c;
+        font-size: 1.5rem;
+        animation: float 3s infinite linear;
+        opacity: 0.7;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(100vh) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.7;
+        }
+        90% {
+          opacity: 0.7;
+        }
+        100% {
+          transform: translateY(-100px) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .letter-container {
+          padding: 20px;
+          margin: 10px;
+        }
+
+        .title {
+          font-size: 1.5rem;
+        }
+
+        .content {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="letter-container">
+      <div class="floating-hearts" id="hearts"></div>
+
+      <div class="header">
+        <div class="heart">❤️</div>
+        <h1 class="title">Voor Omi</h1>
+      </div>
+
+      <div class="decorative-border">
+        <div class="content">
+          <p>Liefste Omi,</p>
+
+          <p>
+            Hoewel ik niet zo goed ben met woorden, wil ik toch mijn gevoelens
+            voor jou opschrijven.
+          </p>
+
+          <p>
+            Vanaf het moment dat je in deze relatie bent gestapt, heb je me
+            altijd je liefde gegeven. Je hebt me op de eerste plaats gezet en me
+            al die jaren laten voelen hoe graag je me ziet. Je bent altijd
+            eerlijk geweest over je gevoelens.
+          </p>
+
+          <p>
+            Als ik naar je kijk, zie ik hoeveel liefde je naar mij uitstraalt.
+            Jouw energie maakt me super gelukkig. De manier waarop je om kleine
+            dingen geeft, doe je zo perfect. Je laat me zien hoe bijzonder je
+            bent, en ook hoe ik jou soms op die kleine dingen tekortdeed.
+          </p>
+
+          <p>
+            Ik weet dat ik een heel slecht beeld van mezelf heb laten zien. Ik
+            ben selfish geweest, ik heb fouten gemaakt en ik heb tegen je
+            gelogen. Je hebt alle recht om me niet te geloven en om te denken
+            dat ik niet om je geef.
+          </p>
+
+          <p>
+            Maar met deze brief wil ik je tonen dat ik mijn gevoelens volledig
+            met jou wil delen.
+          </p>
+
+          <p>
+            Naomi Woldu, ik zie jou als de perfecte vrouw. Ik zou helemaal niks
+            aan jou veranderen. Ik wil echt aan mijn problemen werken, ik wil
+            eerlijk zijn met jou en ik wil beter worden voor ons.
+          </p>
+
+          <p>
+            Je maakt me compleet en je was er voor mij in mijn slechte moment en
+            mijn goede momenten wil ik ook alleen met jou delen.
+          </p>
+
+          <p>
+            Ik hoop dat deze brief je kan doen geloven wat ik voel, of je toch
+            een beetje kan raken.
+          </p>
+
+          <p>
+            Hoewel mijn acties soms het tegenovergestelde tonen, wil ik dat je
+            weet dat ik nog steeds superveel van je hou en dat ik dit echt wil
+            laten werken.
+          </p>
+
+          <p>
+            Please, Omi, ik smeek je: probeer niet te hard te zijn voor jezelf
+            over hoe je je voelt tegenover mij. Ik weet dat ik soms beter gewoon
+            mijn mond moet houden, maar ik wil je deze keer weer niet het gevoel
+            geven dat ik niet hiervoor wil vechten.
+          </p>
+
+          <p>Ik hou echt fkn veel van jou, ninu.</p>
+
+          <p>Ik wil echt beter doen, en ik wil je dat ook tonen.</p>
+        </div>
+      </div>
+
+      <div class="signature">Met heel mijn hart 💕
+
+          <div class="signature">
+            <p>Yabi</p>
+          </div>
+      </div>
+
+
+      <div class="button-container">
+        <button class="love-button" onclick="createHeartExplosion()">
+          Klik hier voor een verrassing! ✨
+        </button>
+      </div>
+    </div>
+
+    <script>
+      // Functie voor de button
+      function showLove() {
+        alert(
+          "💕 Ninu houdt veel van jou, MAUW ❤️",
+        );
+        createHeartExplosion();
+      }
+
+      // Hart explosie effect
+      function createHeartExplosion() {
+        for (let i = 0; i < 20; i++) {
+          setTimeout(() => {
+            createFloatingHeart();
+          }, i * 100);
+        }
+      }
+
+      // Zwevende harten maken
+      function createFloatingHeart() {
+        const heart = document.createElement("div");
+        heart.innerHTML = "❤️";
+        heart.className = "floating-heart";
+        heart.style.left = Math.random() * 100 + "%";
+        heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+        document.getElementById("hearts").appendChild(heart);
+
+        setTimeout(() => {
+          heart.remove();
+        }, 5000);
+      }
+
+      // Automatisch zwevende harten
+      setInterval(() => {
+        if (Math.random() > 0.8) {
+          createFloatingHeart();
+        }
+      }, 2000);
+    </script>
+  </body>
+</html>
